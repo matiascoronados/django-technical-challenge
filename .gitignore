@@ -22,3 +22,9 @@ enrichment_project/__pycache__/settings.cpython-310.pyc
 enrichment_project/__pycache__/urls.cpython-310.pyc
 
 enrichment_project/__pycache__/wsgi.cpython-310.pyc
+
+enrichment_logic/__pycache__/serializer.cpython-310.pyc
+
+enrichment_logic/__pycache__/urls.cpython-310.pyc
+
+enrichment_logic/__pycache__/views.cpython-310.pyc
