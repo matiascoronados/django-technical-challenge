@@ -19,7 +19,7 @@ Una vez configurado lo anterior, en la carpeta raiz del proyecto "DJANGO-TECHNIC
 Para ejecutar el servidor basta con poner en consola el comando.
 1. python manage.py runserver
 
-Para ejecutar las pruebas se debe por en consola el comando.
+Para ejecutar las pruebas se debe poner por consola el comando.
 1. python manage.py test enrichment_logic
 
 ## 3. Utilizar
