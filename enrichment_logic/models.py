@@ -28,10 +28,12 @@ class Merchant(models.Model):
     # Campos principales del modelo.
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     merchant_name = models.CharField(max_length=100, unique=True, verbose_name="Merchant Name")
-    merchant_logo = models.URLField(max_length=500, verbose_name="URL Merchant Logo")
+    merchant_logo = models.URLField(max_length=500, null=True, blank=True, verbose_name="URL Merchant Logo")
     # Llave foranea a la Categoria.
     category = models.ForeignKey(
         Category,
+        null=True,
+        blank=True,
         on_delete=models.PROTECT,
         related_name="merchants",
         verbose_name="Category"
@@ -55,6 +57,8 @@ class Keyword(models.Model):
     # Llave foranea al Comercio.
     merchant = models.ForeignKey(
         Merchant,
+        null=True,
+        blank=True,
         on_delete=models.CASCADE,
         related_name="keywords",
         verbose_name="Merchant"
@@ -76,8 +80,8 @@ class Transaction(models.Model):
     # Campos principales del modelo.
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     description = models.TextField(verbose_name="Description")
-    amount = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Amount")
-    date = models.DateField(verbose_name="Date")
+    amount = models.DecimalField(max_digits=10, null=True, blank=True, decimal_places=2, verbose_name="Amount")
+    date = models.DateField(verbose_name="Date", null=True, blank=True)
     # Llave foranea a la Categoria.
     enriched_category = models.ForeignKey(
         Category,
