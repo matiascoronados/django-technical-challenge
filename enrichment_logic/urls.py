@@ -6,8 +6,8 @@ router = routers.DefaultRouter()
 router.register(r'categories', views.CategoryViewSet)
 router.register(r'merchant', views.MerchantViewSet)
 router.register(r'keyword', views.KeywordViewSet)
-router.register(r'transaction', views.TransactionViewSet)
 
 urlpatterns = [
-        path('', include(router.urls))
+        path('', include(router.urls)),
+        path('transactions/enrich/', views.EnrichTransactionsAPIView.as_view(), name='enrich-transactions'),
 ]
