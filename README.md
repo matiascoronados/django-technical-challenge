@@ -19,6 +19,9 @@ Una vez configurado lo anterior, en la carpeta raiz del proyecto "DJANGO-TECHNIC
 Para ejecutar el servidor basta con poner en consola el comando.
 1. python manage.py runserver
 
+Para ejecutar las pruebas se debe por en consola el comando.
+1. python manage.py test enrichment_logic
+
 ## 3. Utilizar
 Acceder a la URL que se muestra por consola, usualmente es http://127.0.0.1:8000/. Al ingresar aparecera un swagger los apartados:
 1. "Category" para el CRUD de la Categoria.

@@ -32,3 +32,5 @@ enrichment_logic/__pycache__/views.cpython-310.pyc
 enrichment_logic/migrations/__pycache__/0002_alter_keyword_merchant_alter_merchant_category_and_more.cpython-310.pyc
 
 enrichment_logic/migrations/0002_alter_keyword_merchant_alter_merchant_category_and_more.py
+
+enrichment_logic/__pycache__/
